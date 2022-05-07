@@ -1,0 +1,136 @@
+body {
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+  font-family: Jost, sans-serif;
+}
+
+header {
+  color: #fff;
+  background-color: #141414;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+header .header-logo {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+header .header-logo img {
+  margin-right: 10px;
+}
+
+header .header-logo .platform-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1280px) {
+  header .header-logo .platform-title {
+    display: none;
+  }
+}
+
+header .header-buttons {
+  align-items: center;
+  display: flex;
+}
+
+header .header-buttons div {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 15px 10px;
+}
+
+header .header-buttons div:first-child {
+  margin-right: 4px;
+}
+
+header .header-buttons div:hover {
+  color: #141414;
+  background-color: #fff;
+}
+
+main {
+  padding: 10px;
+}
+
+main .section-title {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+}
+
+main .section-title #top-text:after {
+  content: "5";
+  margin: 0 4px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1280px) {
+  main .section-title #top-text:after {
+    content: "3";
+  }
+}
+
+main .top {
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  main .top {
+    flex-direction: column-reverse;
+  }
+}
+
+main .top .top-item {
+  flex: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  main .top .top-item:nth-child(1), main .top .top-item:nth-child(2) {
+    display: none;
+  }
+}
+
+main .top .top-item img {
+  width: 100%;
+  min-width: 225px;
+}
+
+main .section-title {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 16px;
+  display: flex;
+}
+
+main .first, main .second {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+
+main .first .item, main .second .item {
+  flex: 1;
+  transition: all .2s ease-in;
+}
+
+main .first .item:hover, main .second .item:hover {
+  flex: 1.2;
+  transition: all .2s ease-out;
+}
+
+main .first .item img, main .second .item img {
+  min-width: 250px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.c3dc2827.css.map */
